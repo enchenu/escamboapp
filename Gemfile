@@ -10,6 +10,10 @@ gem 'foreman'
 gem 'devise'
 gem 'devise-i18n'
 
+gem 'bootstrap_sb_admin_base_v2'
+
+gem 'rails-assets-bootstrap', '3.3.7', source: 'https://rails-assets.org'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -48,6 +52,8 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  gem "rails-erd"
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
