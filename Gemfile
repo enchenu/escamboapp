@@ -20,6 +20,8 @@ source 'https://rails-assets.org' do
 
 	gem 'rails-assets-bootbox'
 
+  gem 'enum_help'
+
 end
 
 # Use sqlite3 as the database for Active Record

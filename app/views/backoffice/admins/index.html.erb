@@ -26,12 +26,12 @@
                       <td><%= admin.id %></td>
                       <td><%= admin.name %></td>
                       <td><%= admin.email %></td>
-                      <td><%= admin.role_br %></td>
+                      <td><%= admin.role_i18n %></td>
                       <td style="width: 150px">
                         <%= link_to edit_backoffice_admin_path(admin), class:"btn btn-primary btn-circle" do %><i class="fa fa-edit"></i>
                         <% end %>
                         <% if current_admin.id != admin.id %>
-                          <%= link_to backoffice_admin_path(admin), method: :delete, class: "btn btn-danger btn-circle", data: {confirm: "Esta seguro que quiere eliminar al Administrador (<b>#{admin.email})</b>?"} do %>
+                          <%= link_to backoffice_admin_path(admin), method: :delete, class: "btn btn-danger btn-circle", data: {confirm: t('messages.confirm_with', item: admin.name)} do %>
                               <i class="fa fa-minus"></i>
                           <% end %>
                         <% else %>

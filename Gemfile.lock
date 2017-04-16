@@ -68,6 +68,8 @@ GEM
       responders
       warden (~> 1.2.3)
     devise-i18n (1.1.2)
+    enum_help (0.0.17)
+      activesupport (>= 3.0.0)
     erubis (2.7.0)
     execjs (2.7.0)
     faker (1.7.3)
@@ -194,6 +196,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   devise-i18n
+  enum_help!
   faker
   foreman
   jbuilder (~> 2.0)
