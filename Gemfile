@@ -17,7 +17,7 @@ gem 'enum_help'
 gem 'pundit'
 
 gem 'bootstrap_sb_admin_base_v2'
- 
+
 source 'https://rails-assets.org' do
 
 	gem 'rails-assets-bootstrap', '3.3.7'
@@ -65,6 +65,9 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  #Catches mail and serves it through a dream
+  gem 'mailcatcher'
 
   gem "rails-erd"
 
