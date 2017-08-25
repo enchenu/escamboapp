@@ -18,6 +18,8 @@ gem 'pundit'
 
 gem 'bootstrap_sb_admin_base_v2'
 
+gem 'money-rails'
+
 source 'https://rails-assets.org' do
 
 	gem 'rails-assets-bootstrap', '3.3.7'
@@ -76,5 +78,6 @@ group :development do
 
   gem 'faker'
 
-end
+	gem 'lerolero_generator'
 
+end
