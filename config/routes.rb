@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   end
 
   namespace :site do
-  get 'home', to: 'home#index'
+    get 'home', to: 'home#index'
+    namespace :profile do
+      resources :dashboard, only: [:index]
+    end
   end
 
   devise_for :admins, :skip => [:registrations]
