@@ -14,6 +14,9 @@ Rails.application.routes.draw do
     namespace :profile do
       resources :dashboard, only: [:index]
     end
+      namespace :profile do
+        resources :ads, only: [:index]
+    end
   end
 
   devise_for :admins, :skip => [:registrations]
