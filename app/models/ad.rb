@@ -7,7 +7,7 @@ class Ad < ActiveRecord::Base
   belongs_to :member
 
   #Scopes
-  scope :descending_order, ->(quantity = 10) { limit(quantity).order(created_at: :desc)}
+  scope :descending_order, ->(quantity = 9) { limit(quantity).order(created_at: :desc)}
   scope :to_the, ->(member) { where(member: member) }
 
   #paperclip
