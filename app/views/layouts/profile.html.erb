@@ -43,12 +43,17 @@
                     </a>
                 </li>
                 <li>
-                    <%= link_to "Dashboard", site_profile_dashboard_index_path %>
+                    <%= link_to "#{t('profile_menu.dashboard')}", site_profile_dashboard_index_path %>
                 </li>
                 <li>
-                    <%= link_to "Meus Anuncios", site_profile_ads_path %>
+                    <%= link_to "#{t('profile_menu.my_ads')}", site_profile_ads_path %>
                 </li>
-
+                <li>
+                    <%= link_to "#{t('profile_menu.new_ad')}", new_site_profile_ad_path %>
+                </li>
+                <li>
+                    <%#= link_to "#{t('profile_menu.my_data')}", edit_site_profile_my_datum_path(current_member.id) %>
+                </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -67,7 +72,11 @@
 
     </div>
 
-
+    <% if notice %>
+        <script>
+          $.notify("<%= notice %>", "success");
+        </script>
+    <% end %>
 
 
 </body>
