@@ -9,8 +9,8 @@ class Ad < ActiveRecord::Base
 
   # Validates
   validates :title, :description, :category, presence: true
-  #validates :picture, :finish_date, presence:true
-  #validates :price, numericality: { greater_than: 0 }
+  validates :picture, :finish_date, presence:true
+  validates :price, numericality: { greater_than: 0 }
 
   #Scopes
   scope :descending_order, ->(quantity = 9) { limit(quantity).order(created_at: :desc)}
