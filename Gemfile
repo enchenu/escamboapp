@@ -22,6 +22,10 @@ gem 'money-rails'
 
 gem 'paperclip', '~> 5.0.0'
 
+
+gem 'jquery-ui-rails', '~> 6.0.1'
+
+
 source 'https://rails-assets.org' do
 
 	gem 'rails-assets-bootstrap', '3.3.7'
